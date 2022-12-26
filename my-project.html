@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Project</title>
+    <link href="assets/css/my-project.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <nav>
+        <div class="item-left">
+            <ul>
+                <li class="imgLogo">
+                <img src="assets/image/logo dumbways.png" alt="logo dumbways" />
+                </li>
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="my-project.html">My Project </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="item-right">
+            <a href="contact-form.html"> Contact Me</a>
+        </div>
+    </nav>  
+    <main>
+        <div class="project-form">
+            <h1>ADD MY PROJECT</h1>
+            <form onsubmit="addData(event)">
+                <div class="projectname">
+                    <label for="project_name">Project Name</label>
+                    <input type="text" id="project_name">
+                </div>
+                <div class="date">
+                    <div class="half">
+                        <label for="start_date">Start Date</label>
+                        <input type="date" id="start_date">
+                    </div>
+                    <div class="half">
+                        <label for="end_date">End Date</label>
+                        <input type="date" id="end_date">
+                    </div>
+                </div>
+                <div class="deskripsi">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description"></textarea>
+                </div>
+                <h4>Technologies</h4>
+                <div class="checkbox">
+                    <div class="checkbox-kiri">
+                        <div class="checkbox-grup">
+                            <input type="checkbox" name="nodejs" id="nodejs" value="nodejs">
+                            <label for="nodejs">Node JS</label>
+                        </div>
+                        <div class="checkbox-grup">
+                            <input type="checkbox" name="reactjs" id="reactjs" value="reactjs">
+                            <label for="reactjs">React JS</label>
+                        </div>
+                    </div>
+                    <div class="checkbox-kanan">
+                        <div class="checkbox-grup">
+                            <input type="checkbox" name="nextjs" id="nextjs" value="nextjs">
+                            <label for="nextjs">Next Js</label>
+                        </div>
+                        <div class="checkbox-grup">
+                            <input type="checkbox" name="typescript" id="typescript" value="typescript">
+                            <label for="typescript">Typescript</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="upload">
+                    <label for="upload_image">Upload Image</label>
+                    <div class="upload-button">
+                        <label for="upload_image">
+                            <p>Choose</p>
+                            <img src="assets/image/clip.png" alt="clip"/>
+                        </label>
+                        <input type="file" id="upload_image" name="upload-image" accept="image/*" hidden>
+                    </div>
+                </div>
+                
+                <div class="button">
+                    <button type="submit" class="btn-submit">Submit</button>
+                </div>
+            </form>
+        </div>
+       
+        <div class="list-project-head">
+            <h1>My Project</h1>
+            <div class="list-project" id="projects">
+                
+            </div>
+        </div>
+    </main>
+    </div>
+    <script src="/assets/js/my-project.js"></script>
+    <script src="/assets/js/loader.js"></script>
+</body>
+</html>

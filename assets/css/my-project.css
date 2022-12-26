@@ -1,0 +1,368 @@
+* {
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: #ebeaea;
+    height: 9vh;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+img {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3d3d3d;
+    font-weight: bold;
+}
+
+nav ul li .active {
+    color: #3d3d3d;
+    font-weight: bold;
+}
+
+.imgLogo{
+    width: 32px;
+    margin-right: 24px;
+}
+
+.item-left{
+    flex: 50%
+}
+
+.item-right{
+    flex: 50%;
+    text-align: end;
+    margin-right: 30px;
+}
+
+.item-right a {
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+
+body {
+    background-color: #d0d0d0;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    height: 120vh;
+}
+
+.project-form {
+    width: 450px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+
+.project-form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.projectname {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.projectname input {
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: 0 1px 5px -1px #969696;
+
+}
+
+.projectname label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.date input {
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 5px -1px #969696;
+
+}
+
+.date label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.half {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.half:first-child input {
+    width: 100%;
+}
+
+.half:last-child input {
+    width: 100%;
+}
+
+.half:first-child {
+    flex: 50%;
+    margin-right: 50px;
+}
+
+.half:last-child {
+    flex: 50%;
+}
+
+.deskripsi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.deskripsi textarea {
+    border: none;
+    padding: 40px 10px;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: 0 1px 5px -1px #969696;
+
+}
+
+.deskripsi label {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    display: flex;
+}
+
+.checkbox label {
+    color: #3d3d3d;
+    font-weight: 450;
+}
+
+.checkbox input {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    
+}
+
+.checkbox-grup {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-kiri {
+    margin-right: 50px;
+}
+
+.checkbox-kiri .checkbox-grup {
+    margin-bottom: 10px;
+}
+
+.checkbox-kanan .checkbox-grup {
+    margin-bottom: 10px;
+}
+
+.upload label {
+    font-weight: bold;
+}
+
+.upload-button {
+    width: 470px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: white;
+    border: none;
+    box-shadow: 0 1px 10px -1px #969696;
+    border-radius: 4px;
+}
+
+.upload-button label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 100%;
+}
+
+.upload-button label img {
+    margin-right: 10px;
+    width: 20px;
+
+}
+
+.upload-button p {
+    background-color: #E4E4E4;
+    width: 100px;
+    padding: 8px 8px 8px 8px;
+    text-align: center;
+    border-radius: 4px;
+    color: #969696;
+    border: 1px solid rgb(203, 203, 203);
+}
+
+.upload-button p:hover {
+    background-color: #3d3d3d;
+    color: white;
+    transition: 500ms;
+}
+
+.button {
+    width: 470px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.button .btn-submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.button .btn-submit:hover {
+    background-color: #3d3d3d;
+    transition: 500ms;
+}
+
+.list-project-head {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    background-color: #F4F3F3;
+    margin: auto;
+    width: 100%;
+    padding: 20px 0 20px 0;
+}
+
+.list-project-head h1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.list-project {
+    margin-top: 22px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-project {
+    text-decoration: none;
+    color: black;
+    flex-basis: 20%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.3);
+}
+
+.cover_image {
+    display: flex;
+    justify-content: center;
+}
+
+.cover_image img {
+    margin: 10px;
+    width: 230px;
+    height: 230px;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-text {
+    max-width: 100%;
+    overflow: hidden;
+    height: 43px;
+}
+
+.project_name {
+    font-weight: 700;
+    font-size: 16;
+}
+
+.tech_icon img {
+    margin-top: 10px;
+    width: 30px;
+}
+
+.btn-card {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn-card button {
+    padding: 6px 18px;
+    flex: 1;
+    text-decoration: none;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-card button:hover {
+    background: orangered;
+}

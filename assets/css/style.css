@@ -28,7 +28,8 @@ nav ul li a {
 }
 
 nav ul li .active {
-    color: orangered;
+    color: #3d3d3d;
+    font-weight: bold;
 }
 
 .imgLogo{

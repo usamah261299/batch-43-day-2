@@ -1,7 +1,57 @@
 * {
-    margin: 0;
+    margin:0;
     font-family: 'Poppins', sans-serif;
-    background-color: #d0d4df;
+}
+
+nav {
+    display: flex;
+    background-color: #ebeaea;
+    height: 9vh;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3d3d3d;
+    font-weight: bold;
+}
+
+nav ul li .active {
+    color: #3d3d3d;
+    font-weight: bold;
+}
+
+.imgLogo{
+    width: 32px;
+    margin-right: 24px;
+}
+
+.item-left{
+    flex: 50%
+}
+
+.item-right{
+    flex: 50%;
+    text-align: end;
+    margin-right: 30px;
+}
+
+.item-right a {
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
 }
 
 form {
@@ -9,8 +59,13 @@ form {
     margin: 50px auto;
 }
 
-div {
-    margin-top: 20px;
+main {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    height: 120vh;
+    background-color: #c7c7c7;
 }
 
 input, select, textarea {

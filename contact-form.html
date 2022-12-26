@@ -7,14 +7,35 @@
     <title>Contact Form</title>
     <link rel="stylesheet" href="assets/css/contact-form.css">
 </head>
-    <body><h1>GET IN TOUCH</h1>
-        <form>
+    <body>
+        <nav>
+            <div class="item-left">
+                <ul>
+                    <li class="imgLogo">
+                        <img src="assets/image/logo dumbways.png" alt="logo dumbways" />
+                    </li>
+                    <li>
+                        <a class="active" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="my-project.html">My Project </a>
+                     </li>
+                 </ul>
+            </div>
+
+            <div class="item-right">
+            <a href="contact-form.html"> Contact Me</a>
+            </div>
+        </nav>  
+        <main>
+            <h1>GET IN TOUCH</h1>
+            <form>
             <div>
                 <label for="name">Name
                 </label>
                 <input id="name" type="text"/>
             </div>
-                <div></div>
+                <div>
                 <label for="email">Email
                 </label>
                 <input id="email" type="email"/>
@@ -25,21 +46,22 @@
                 <input id="phoneNumber" type="text"/>
             </div>
             <div>
-            <label for="subject">Subject</label>
-                <select id="subject">
+                <label for="subject">Subject</label>
+                    <select id="subject">
                     <option></option>
                     <option>laporan</option>
                     <option>help</option>
-                </select>
-            </div>
-            <div>
+                    </select>
+                    </div>
+                    <div>
                 <label for="message">Your Message</label>
-                <textarea id="message"></textarea>
-            </div>
-            <div>
-                <button type="button" onclick="getData()">submit</button>
-            </div>
-        </form>
+                    <textarea id="message"></textarea>
+                    </div>
+                    <div>
+                        <button type="button" onclick="getData()">submit</button>
+                    </div>
+            </form>
+        </main>
     </body>
     <script src="assets/js/contact-form.js"></script>
 </html>
